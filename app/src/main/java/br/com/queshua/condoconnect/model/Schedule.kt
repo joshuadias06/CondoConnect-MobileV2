@@ -3,7 +3,7 @@ package br.com.queshua.condoconnect.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Agendamento(
+data class Schedule(
     val id: Int,
     val event: String?,
     val hour: String?,
@@ -31,12 +31,12 @@ data class Agendamento(
         parcel.writeString(description)
     }
 
-    companion object CREATOR : Parcelable.Creator<Agendamento> {
-        override fun createFromParcel(parcel: Parcel): Agendamento {
-            return Agendamento(parcel)
+    companion object CREATOR : Parcelable.Creator<Schedule> {
+        override fun createFromParcel(parcel: Parcel): Schedule {
+            return Schedule(parcel)
         }
 
-        override fun newArray(size: Int): Array<Agendamento?> {
+        override fun newArray(size: Int): Array<Schedule?> {
             return arrayOfNulls(size)
         }
     }

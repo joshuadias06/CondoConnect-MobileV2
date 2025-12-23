@@ -3,7 +3,7 @@ package br.com.queshua.condoconnect.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Produto(
+data class Product(
     val productId: Int,
     val productName: String,
     val productPrice: String,
@@ -31,12 +31,12 @@ data class Produto(
         parcel.writeString(productImageUrl)
     }
 
-    companion object CREATOR : Parcelable.Creator<Produto> {
-        override fun createFromParcel(parcel: Parcel): Produto {
-            return Produto(parcel)
+    companion object CREATOR : Parcelable.Creator<Product> {
+        override fun createFromParcel(parcel: Parcel): Product {
+            return Product(parcel)
         }
 
-        override fun newArray(size: Int): Array<Produto?> {
+        override fun newArray(size: Int): Array<Product?> {
             return arrayOfNulls(size)
         }
     }
