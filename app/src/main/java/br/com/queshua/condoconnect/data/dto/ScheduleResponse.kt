@@ -1,4 +1,4 @@
-package br.com.queshua.condoconnect.response
+package br.com.queshua.condoconnect.data.dto
 
 import java.util.Date
 

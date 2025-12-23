@@ -1,7 +1,6 @@
-package br.com.queshua.condoconnect.response
+package br.com.queshua.condoconnect.domain.model
 
-data class LoginResponse(
-    val userId: Int,
+data class User(
     val userName: String,
     val userEmail: String,
     val userPassword: String,

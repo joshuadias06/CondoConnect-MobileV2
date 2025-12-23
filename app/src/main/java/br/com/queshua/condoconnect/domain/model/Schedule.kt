@@ -1,4 +1,4 @@
-package br.com.queshua.condoconnect.model
+package br.com.queshua.condoconnect.domain.model
 
 import android.os.Parcel
 import android.os.Parcelable
