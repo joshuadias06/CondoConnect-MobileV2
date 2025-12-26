@@ -1,6 +1,7 @@
 package br.com.queshua.condoconnect.data.remote.api
 
 import br.com.queshua.condoconnect.data.dto.ProductResponse
+import br.com.queshua.condoconnect.data.dto.ResponseEdit
 import retrofit2.Call
 import retrofit2.http.DELETE
 import retrofit2.http.Field
@@ -31,7 +32,7 @@ interface ProductApi {
         @Field("ProductPrice") price: String,
         @Field("ProductDescription") description: String?,
         @Field("ProductImageUrl") imageUrl: String?
-    ): Call<Void>
+    ): Call<ResponseEdit>
 
     @FormUrlEncoded
     @DELETE("api/products/delete")

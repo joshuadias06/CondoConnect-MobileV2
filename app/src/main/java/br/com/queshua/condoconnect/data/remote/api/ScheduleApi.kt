@@ -1,5 +1,6 @@
 package br.com.queshua.condoconnect.data.remote.api
 
+import br.com.queshua.condoconnect.data.dto.ResponseEdit
 import br.com.queshua.condoconnect.domain.model.Schedule
 import retrofit2.Call
 import retrofit2.http.DELETE
@@ -31,7 +32,7 @@ interface ScheduleApi {
         @Field("date") date: String,
         @Field("hour") hour: String,
         @Field("description") description: String?
-    ): Call<Void>
+    ): Call<ResponseEdit>
 
     @FormUrlEncoded
     @DELETE("api/schedules/delete")
